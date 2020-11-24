@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "target": "ESNext",
+    "lib": [
+      "es2019",
+      "dom"
+    ]
+  },
+  "include": [
+    "./src/*.ts",
+    "./examples/**/*.ts",
+    "./typings/*.d.ts", 
+    "./src/extras/plugins/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}

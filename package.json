@@ -1,0 +1,31 @@
+{
+  "name": "ts_libs",
+  "version": "1.0.0",
+  "description": "ts函数库",
+  "main": "dist/vueLibs.umd.js",
+  "module": "dist/vueLibs.esm.js",
+  "unpkg": "dist/vueLibs.min.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "cross-env rimraf dist/ && npm run build:browser && npm run build:es && npm run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js",
+    "eslint": "eslint src --ext .ts"
+  },
+  "author": "gaoye",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3",
+    "rollup": "^2.33.3",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typescript": "^4.1.2"
+  }
+}
