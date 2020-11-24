@@ -1,5 +1,5 @@
 {
-  "name": "ts_libs",
+  "name": "@devgaoy/libs",
   "version": "1.0.0",
   "description": "ts函数库",
   "main": "dist/vueLibs.umd.js",
@@ -13,7 +13,7 @@
     "build:umd": "rollup --config build/rollup.config.umd.js",
     "eslint": "eslint src --ext .ts"
   },
-  "author": "gaoye",
+  "author": "devgaoy",
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
