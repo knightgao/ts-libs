@@ -1,5 +1,5 @@
 import { deepClone } from "./deepClone";
-
+import { isArray } from "../index";
 /**
  * 合并
  * @param {*} target 合并的目标
@@ -10,7 +10,7 @@ function deepMerge(target: Object, merged: Object): Object {
     if (
       target[key] &&
       typeof target[key] === "object" &&
-      Object.prototype.toString.call(target[key]) !== "[object Array]"
+      !isArray(target[key])
     ) {
       deepMerge(target[key], merged[key]);
       continue;
