@@ -1,6 +1,7 @@
 {
   "name": "@devgaoy/libs",
-  "version": "1.0.2",
+  "version": "1.0.4",
+  
   "description": "ts函数库",
   "main": "dist/vueLibs.umd.js",
   "module": "dist/vueLibs.esm.js",
@@ -16,7 +17,8 @@
     "build:umd": "rollup --config build/rollup.config.umd.js",
     "eslint": "eslint src --ext .ts",
     "jest": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "dopublish": "npm run build && npm publish"
   },
   "author": "gaoy.sz",
   "license": "ISC",
