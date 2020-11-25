@@ -35,18 +35,19 @@ function deepClone(object: Object, recursion = false): Object {
  */
 function deepMerge(target: Object, merged: Object): Object {
   for (let key in merged) {
-    if (target[key] && typeof target[key] === "object") {
+    if (
+      target[key] &&
+      typeof target[key] === "object" &&
+      Object.prototype.toString.call(target[key]) !== "[object Array]"
+    ) {
       deepMerge(target[key], merged[key]);
-
       continue;
     }
 
     if (typeof merged[key] === "object") {
       target[key] = deepClone(merged[key], true);
-
       continue;
     }
-
     target[key] = merged[key];
   }
 
