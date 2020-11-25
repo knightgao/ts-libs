@@ -6,6 +6,8 @@
   "module": "dist/vueLibs.esm.js",
   "unpkg": "dist/vueLibs.min.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://github.com/knightgao/libs",
+  "repository": "https://github.com/knightgao/libs.git",
   "publishConfig": {
     "access": "public"
   },
