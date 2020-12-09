@@ -1,5 +1,5 @@
 import { deepClone } from "./deepClone";
-import { isArray } from "../index";
+import { isArray } from "../type/index";
 /**
  * 合并
  * @param {*} target 合并的目标

@@ -1,6 +1,6 @@
 {
   "name": "@devgaoy/libs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ts函数库",
   "main": "dist/vueLibs.umd.js",
   "module": "dist/vueLibs.esm.js",
