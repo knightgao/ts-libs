@@ -122,6 +122,13 @@ function isRegExp(data: any) {
   return Object.prototype.toString.call(data) === "[object RegExp]";
 }
 /**
+ * 判断是否是 FormData
+ * @param data
+ */
+function isFormData(data: any) {
+  return Object.prototype.toString.call(data) === "[object FormData]";
+}
+/**
  * 判断是否是 Window
  * @param data
  */
@@ -133,13 +140,12 @@ function isWindow(data: any) {
  * 返回类型的小写
  * @param data 需要判断的对象
  */
-function getDataType(data: any):string {
+function getDataType(data: any): string {
   return Object.prototype.toString
     .call(data)
     .match(/\[object (.*)\]/)[1]
     .toLowerCase();
 }
-
 
 export {
   isString,
@@ -160,5 +166,6 @@ export {
   isSymbol,
   isRegExp,
   isWindow,
-  getDataType
-}
+  isFormData,
+  getDataType,
+};
